@@ -1,17 +1,17 @@
-Step: step-credential-initializer-d9ws8:
+Step: step-credential-initializer-x2ghj:
 
-{"level":"warn","ts":1566240038.1304681,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1566240038.1308222,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-Step: step-working-dir-initializer-c2w9w:
+{"level":"warn","ts":1566244949.665045,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1566244949.6654387,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-85rq9:
 
-{"level":"warn","ts":1566240039.158838,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1566240039.1598475,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/springapp\""}
+{"level":"warn","ts":1566244950.703596,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1566244950.7043233,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/springapp\""}
 Step: step-place-tools:
 
-Step: step-git-source-********-springapp-master-j6snn:
+Step: step-git-source-********-springapp-master-pkr84:
 
-{"level":"warn","ts":1566240048.2379549,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1566240048.6518717,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/********/springapp.git @ v0.0.1 in path /workspace/source"}
+{"level":"warn","ts":1566244957.8313627,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1566244958.2721148,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/********/springapp.git @ v0.0.4 in path /workspace/source"}
 Step: step-git-merge:
 
 WARNING: no SHAs to merge, falling back to initial cloned commit
@@ -25,7 +25,7 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -----------------------< pivi.sample:springapp >------------------------
-[INFO] Building demo 0.0.1
+[INFO] Building demo 0.0.4
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ springapp ---
@@ -53,33 +53,33 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running pivi.sample.springapp.DemoApplicationTests
-18:41:08.831 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pivi.sample.springapp.DemoApplicationTests]
-18:41:08.836 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-18:41:08.850 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-18:41:08.868 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pivi.sample.springapp.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-18:41:08.876 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pivi.sample.springapp.DemoApplicationTests], using SpringBootContextLoader
-18:41:08.878 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pivi.sample.springapp.DemoApplicationTests]: class path resource [pivi/sample/springapp/DemoApplicationTests-context.xml] does not exist
-18:41:08.878 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pivi.sample.springapp.DemoApplicationTests]: class path resource [pivi/sample/springapp/DemoApplicationTestsContext.groovy] does not exist
-18:41:08.879 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pivi.sample.springapp.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:41:08.880 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pivi.sample.springapp.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:41:08.909 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pivi.sample.springapp.DemoApplicationTests]
-18:41:08.965 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/pivi/sample/springapp/DemoApplication.class]
-18:41:08.966 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pivi.sample.springapp.DemoApplication for test class pivi.sample.springapp.DemoApplicationTests
-18:41:09.049 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [pivi.sample.springapp.DemoApplicationTests]: using defaults.
-18:41:09.050 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-18:41:09.058 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-18:41:09.058 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-18:41:09.059 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31368b99, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1725dc0f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3911c2a7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ac3c60d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4facf68f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@76508ed1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41e36e46, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15c43bd9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d74bf60, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4f209819]
-18:41:09.062 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.063 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.063 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.064 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.064 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.064 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.068 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3835c46 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1dde4cb2 testClass = DemoApplicationTests, locations = '**', classes = '{class pivi.sample.springapp.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '**', propertySourceLocations = '**', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4e7dc304, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@48503868, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-18:41:09.069 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.069 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
-18:41:09.087 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+20:03:03.087 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pivi.sample.springapp.DemoApplicationTests]
+20:03:03.092 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:03:03.101 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:03:03.123 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pivi.sample.springapp.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:03:03.142 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pivi.sample.springapp.DemoApplicationTests], using SpringBootContextLoader
+20:03:03.145 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pivi.sample.springapp.DemoApplicationTests]: class path resource [pivi/sample/springapp/DemoApplicationTests-context.xml] does not exist
+20:03:03.145 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pivi.sample.springapp.DemoApplicationTests]: class path resource [pivi/sample/springapp/DemoApplicationTestsContext.groovy] does not exist
+20:03:03.146 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pivi.sample.springapp.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:03:03.147 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pivi.sample.springapp.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:03:03.190 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.260 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/pivi/sample/springapp/DemoApplication.class]
+20:03:03.262 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pivi.sample.springapp.DemoApplication for test class pivi.sample.springapp.DemoApplicationTests
+20:03:03.362 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [pivi.sample.springapp.DemoApplicationTests]: using defaults.
+20:03:03.363 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:03:03.374 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+20:03:03.376 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:03:03.376 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31368b99, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1725dc0f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3911c2a7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ac3c60d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4facf68f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@76508ed1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41e36e46, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15c43bd9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d74bf60, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4f209819]
+20:03:03.382 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.383 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.384 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.384 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.384 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.384 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.387 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3835c46 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1dde4cb2 testClass = DemoApplicationTests, locations = '**', classes = '{class pivi.sample.springapp.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '**', propertySourceLocations = '**', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4e7dc304, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@48503868, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+20:03:03.388 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.388 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pivi.sample.springapp.DemoApplicationTests]
+20:03:03.407 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -89,13 +89,13 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2019-08-19 18:41:09.339  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : Starting DemoApplicationTests on ********-springapp-master-1-from-build-pack-6p7d5-pod-8f55e2 with PID 69 (started by root in /workspace/source)
-2019-08-19 18:41:09.340  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : No active profile set, falling back to default profiles: default
-2019-08-19 18:41:11.610  INFO 69 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-19 18:41:12.778  INFO 69 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-08-19 18:41:12.857  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : Started DemoApplicationTests in 3.757 seconds (JVM running for 4.343)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.295 s - in pivi.sample.springapp.DemoApplicationTests
-2019-08-19 18:41:13.060  INFO 69 --- [       Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-19 20:03:03.648  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : Starting DemoApplicationTests on ********-springapp-master-1-from-build-pack-hq8ml-pod-959f50 with PID 69 (started by root in /workspace/source)
+2019-08-19 20:03:03.650  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : No active profile set, falling back to default profiles: default
+2019-08-19 20:03:06.521  INFO 69 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-19 20:03:07.500  INFO 69 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-08-19 20:03:07.581  INFO 69 --- [           main] p.sample.springapp.DemoApplicationTests  : Started DemoApplicationTests in 4.168 seconds (JVM running for 4.961)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.758 s - in pivi.sample.springapp.DemoApplicationTests
+2019-08-19 20:03:07.780  INFO 69 --- [       Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -103,22 +103,22 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ springapp ---
-[INFO] Building jar: /workspace/source/target/springapp-0.0.1.jar
+[INFO] Building jar: /workspace/source/target/springapp-0.0.4.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ springapp ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ springapp ---
-[INFO] Installing /workspace/source/target/springapp-0.0.1.jar to /root/.mvnrepository/pivi/sample/springapp/0.0.1/springapp-0.0.1.jar
-[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/pivi/sample/springapp/0.0.1/springapp-0.0.1.pom
+[INFO] Installing /workspace/source/target/springapp-0.0.4.jar to /root/.mvnrepository/pivi/sample/springapp/0.0.4/springapp-0.0.4.jar
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/pivi/sample/springapp/0.0.4/springapp-0.0.4.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ springapp ---
 [INFO] Using alternate deployment repository nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  31.363 s
-[INFO] Finished at: 2019-08-19T18:41:22Z
+[INFO] Total time:  37.094 s
+[INFO] Finished at: 2019-08-19T20:03:17Z
 [INFO] ------------------------------------------------------------------------
 Step: step-build-skaffold-version:
 
@@ -126,14 +126,14 @@ v0.31.0
 Step: step-build-container-build:
 
 [36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
-2019/08/19 18:41:24 No matching credentials were found, falling back on anonymous
+2019/08/19 20:03:19 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:408aa8da1cd7ceefb963fde518004c7db807dea67870db6d9f2f8ca0a337e979: no such file or directory 
 [36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
-2019/08/19 18:41:25 No matching credentials were found, falling back on anonymous
+2019/08/19 20:03:20 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0002] cmd: EXPOSE                                  
 [36mINFO[0m[0002] Adding exposed port: 8080/tcp                
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/springapp-0.0.1.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/springapp-0.0.4.jar] 
 [36mINFO[0m[0002] Skipping unpacking as no commands require it. 
 [36mINFO[0m[0002] Taking snapshot of full filesystem...        
 [36mINFO[0m[0002] ENV PORT 8080                                
@@ -147,7 +147,7 @@ Step: step-build-container-build:
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
 [36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/springapp-0.0.1.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/springapp-0.0.4.jar] 
 [36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
 [36mINFO[0m[0002] Taking snapshot of files...                  
 [36mINFO[0m[0002] WORKDIR /opt                                 
@@ -156,39 +156,12 @@ Step: step-build-container-build:
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
 [36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-2019/08/19 18:41:26 pushed blob: sha256:0320fe1197e29277a180d5be1bb5e0d32f3f32885455d8c5f93b556456f4ee45
-2019/08/19 18:41:26 pushed blob: sha256:5791659f1a5b55672936566cb2f43f7ef845ca239366f78d5ef47e67be488f8f
-2019/08/19 18:41:26 pushed blob: sha256:deaf24be028782e6c57eb39d3f360e5ad0c7b9c9aaf5f8c56cb33770d625a014
-2019/08/19 18:41:26 pushed blob: sha256:80a55c9c9fe89b163322e46d017f346fab100604a4a0a63a1a790b89c1c2105f
-2019/08/19 18:41:26 pushed blob: sha256:7aaf9a088d61d78b50cd2a58984cc89ed9c0c5c66124fd74b4baa0cba32524c1
-2019/08/19 18:41:33 pushed blob: sha256:1ab2bdfe97783562315f98f94c0769b1897a05f7b0395ca1520ebee08666703b
-2019/08/19 18:41:51 pushed blob: sha256:9110ea0d47ee3b75e48971381c280070f0d76603288b1da30af905152b7d8250
-2019/08/19 18:41:51 10.96.208.150:5000/********/springapp:0.0.1: digest: sha256:d63461242aeb4317fbe342a92a6227a265ebc998f528db3c5d82cf08a650861a size: 1244
+error pushing image: failed to push to destination gcr.io/********/springapp:0.0.4: UNKNOWN: Project 'project:********' not found or deleted.
 Step: step-build-post-build:
 
-no CVE provider running in the current ** namespace so skip adding image to be analysed
 Step: step-promote-changelog:
 
-Converted /workspace/source/charts/springapp to an unshallow repository
-no previous commit version found so change diff unavailable
 Step: step-promote-helm-release:
 
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
-Successfully added Helm repository storage.googleapis.com.
-Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
-Successfully added Helm repository jenkins-x-chartmuseum.
-WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file springapp-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
-Received 201 response: {"saved":true}
 Step: step-promote-**-promote:
 
-WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
-Promoting app springapp version 0.0.1 to namespace **-staging
-Created Pull Request: https://github.com/********/environment-sharkgrass-staging/pull/1
-Added label  to Pull Request https://github.com/********/environment-sharkgrass-staging/pull/1
-WARNING: Failed to query the Pull Request last commit status for https://github.com/********/environment-sharkgrass-staging/pull/1 ref a39c504ee4d46777eac5e55c973ab0e2b393aa55 Could not find a status for repository ********/environment-sharkgrass-staging with ref a39c504ee4d46777eac5e55c973ab0e2b393aa55
-WARNING: Failed to query the Pull Request last commit status for https://github.com/********/environment-sharkgrass-staging/pull/1 ref a39c504ee4d46777eac5e55c973ab0e2b393aa55 Could not find a status for repository ********/environment-sharkgrass-staging with ref a39c504ee4d46777eac5e55c973ab0e2b393aa55
-Pull Request https://github.com/********/environment-sharkgrass-staging/pull/1 is merged at sha 632ed3146e0cbbb84afa30303362cf2c805ac929
-Pull Request merged but we are not waiting for the update pipeline to complete!
-WARNING: Could not find the service URL in namespace **-staging for names springapp, **-springapp, **-staging-springapp
